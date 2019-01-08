@@ -74,7 +74,7 @@ const ProfileSchema = new Schema({
       youtube: {
         type: String
       },
-      fieldOfStudy: {
+      fieldofstudy: {
         type: String
       },
       from: {

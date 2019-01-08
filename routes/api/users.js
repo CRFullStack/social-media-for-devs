@@ -62,7 +62,7 @@ router.post("/register", (req, res) => {
   });
 });
 
-//@route Get api/users/login
+//@route Post api/users/login
 //@desc Login User / return JWT
 //@access Public
 
@@ -102,7 +102,7 @@ router.post("/login", (req, res) => {
           jwt.sign(
             payload,
             keys.secretOrKey,
-            { expiresIn: 3600 },
+            { expiresIn: 3600 }, // 1hour
             //callback function
             (err, token) => {
               res.json({
